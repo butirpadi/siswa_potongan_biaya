@@ -1,4 +1,4 @@
-<odoo>
+<flectra>
     <data>
         <record id="view_form_registrasi" model="ir.ui.view">
             <field name="name">calon.psb.ocb11.form</field>
@@ -16,4 +16,4 @@
             </field>
         </record>
     </data>
-</odoo>
+</flectra>

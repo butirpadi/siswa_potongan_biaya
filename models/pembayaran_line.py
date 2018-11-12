@@ -1,6 +1,6 @@
 
-from odoo import models, fields, api
-from odoo.addons import decimal_precision as dp
+from flectra import models, fields, api
+from flectra.addons import decimal_precision as dp
 from pprint import pprint
 
 class pembayaran_line(models.Model):
@@ -32,4 +32,4 @@ class pembayaran_line(models.Model):
             # print(jml_pot)
             # print(rec.amount_due)
             # print(rec.bayar)
-            # pprint(rec)
+            # pprint(rec) 
