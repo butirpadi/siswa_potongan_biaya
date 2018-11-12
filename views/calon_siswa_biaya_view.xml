@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record id="view_form_registrasi" model="ir.ui.view">
+            <field name="name">calon.psb.ocb11.form</field>
+            <field name="model">siswa_psb_ocb11.calon_siswa</field>
+            <field name="inherit_id" ref="siswa_psb_ocb11.view_form_registrasi" />
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="payment_lines"]/tree/field[@name="harga"]' position="after">
+                    <field name="qty" readonly="1"  />
+                    <field name="potongan_harga" sum="Total Potongan" />
+                    <field name="jumlah_harga" sum="Total Harga" readonly="1" />
+                </xpath>
+                <xpath expr='//field[@name="payment_lines"]/tree/field[@name="bulan"]' position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

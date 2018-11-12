@@ -1,0 +1,7 @@
+<odoo>
+    <data>
+        <!-- <menuitem name="Akun Kas" id="siswa_keu_ocb11.menu_kategori_kas" parent="siswa_keu_ocb11.submenu_keuangan" action="siswa_keu_ocb11.kas_kategori_action_window" sequence="3"/> -->
+        <menuitem name="Potongan Biaya" id="siswa_potongan_biaya.potongan_biaya_menu" parent="siswa_keu_ocb11.submenu_keuangan" action="siswa_potongan_biaya.siswa_potongan_view_action"  />
+        <menuitem name="Batch Create Potongan" id="siswa_potongan_biaya.batch_create_potongan_biaya_menu" parent="siswa_keu_ocb11.submenu_keuangan" action="siswa_potongan_biaya.wizard_batch_create_potongan_action"  />
+    </data>
+</odoo>

@@ -1,0 +1,20 @@
+<odoo>
+    <data>
+
+        <record id="view_pembayaran_form" model="ir.ui.view">
+            <field name="name">pembayaran.ocb11.form</field>
+            <field name="model">siswa_keu_ocb11.pembayaran</field>
+            <field name="inherit_id" ref="siswa_keu_ocb11.view_pembayaran_form"/>
+            <field eval="22" name="priority"/>
+            <field name="arch" type="xml">
+                <xpath expr='//field[@name="pembayaran_lines"]/tree/field[@name="amount_due"]' position="before">
+                    <field name="jumlah_potongan" sum="Total Potongan" />
+                </xpath>
+                <xpath expr='//field[@name="pembayaran_lines"]/tree/field[@name="amount_due"]' position="replace">
+                    <field name="amount_due" sum="Total Amount Due" />
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

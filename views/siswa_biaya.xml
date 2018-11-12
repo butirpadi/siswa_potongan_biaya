@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="inherit_biaya_persiswa_list_with_potongan">
+            <field name="name">siswa_keu_ocb11_biaya_persiswa_list_with_potongan</field>
+            <field name="model">siswa_keu_ocb11.siswa_biaya</field>
+            <field name="inherit_id" ref="siswa_keu_ocb11.biaya_persiswa_list" />
+            <field name="priority" eval="20"/>
+            <field name="arch" type="xml">
+                <xpath expr='//tree/field[@name="harga"]' position="after">
+                    <field name="potongan_ids" string="Potongan" />
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
